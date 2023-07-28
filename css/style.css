@@ -1,0 +1,95 @@
+*{box-sizing:border-box;}
+body{
+    margin:0;
+    padding:0;
+}
+.container{
+    max-width:600px;
+    width:100%;
+    padding:50px 30px;
+}
+.gamenpc{
+    border:3px solid #ffc5e7;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+}
+.npcbox{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border: 3px solid #ffc5e7;
+    position: relative;
+}
+.gamenpc img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    object-fit: cover;
+    object-position: center -5px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.ganenpc h1#playgame{
+    font-size:20px;
+    color:#000;
+    text-align:center;
+}
+.rps{
+    width:100%;
+    margin-top:30px;
+    padding-left:20px;
+    padding-right:20px;
+    display:flex;
+    justify-content: space-between;
+}
+.me, .com{
+   width:150px;
+   height:150px;
+   text-align:center;
+}
+.me img, .com img{
+    width:106px;
+    height:107px;
+}
+.btnbox{
+    margin-top:40px;
+    padding:70px 30px 30px;
+    background:rgb(255, 211, 237);
+    text-align:center;
+    position:relative;
+}
+.btnbox img{
+    margin-left:10px;
+    margin-right:10px;
+    width:70px;
+}
+.tt{
+    width:200px;
+    padding:10px;
+    background:rgb(239, 113, 167);
+    color:#fff;
+    text-align:center;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:-40px;
+    box-shadow: 6px 6px 0 0 rgba(0,0,0,0.3);
+}
+.npcmove{
+    animation-name: npcMove;
+    animation-duration: 500ms;
+    animation-iteration-count: 3;
+}
+@keyframes npcMove{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
