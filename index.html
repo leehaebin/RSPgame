@@ -27,12 +27,22 @@
         </div>
 
         <div class="btnbox">
-            <img src="images/scissors.png" alt="가위" id="scissors" >
-            <img src="images/rock.png" alt="바위" id="rock" >
-            <img src="images/paper.png" alt="보" id="paper" >
+            <img src="images/scissors.png" alt="가위" id="scissors" onclick="rps(1)" >
+            <img src="images/rock.png" alt="바위" id="rock" onclick="rps(2)" >
+            <img src="images/paper.png" alt="보" id="paper" onclick="rps(3)" >
             <h1 class="tt">선택하세요.</h1>
         </div>
 
+        <div class="board">
+            <p>전적</p>
+        </div>
+        <div class="result-box" id="result-box">
+            <div class="result">
+                
+            </div>
+            
+        </div>
+        <div class="reset" onclick="reset()">다시하기</div>
     </div>
 
     <script src="js/script.js"></script>
